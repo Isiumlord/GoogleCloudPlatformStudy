@@ -12,6 +12,7 @@ Nesse tutorial iremos configurar um ambiente de desenvolvimento do Dataflow em P
 * Uma Bucket;
 * SDK do Dataflow instalado com a versão Python 3.7;
 * Apache Beam instalado no SDK do Dataflow;
+* Base de Dados;
 * Código da Pipeline.
 <br>
 
