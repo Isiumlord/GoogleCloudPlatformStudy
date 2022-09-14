@@ -28,6 +28,17 @@
 
 <br>
 
+## :small_blue_diamond: ETL Processing on Google Cloud Using Dataflow and BigQuery
+* Neste laboratório, você cria vários pipelines de dados que ingerem dados de um conjunto de dados disponível publicamente no BigQuery, criando seu próprio Data Pipeline, incluindo as considerações de design, bem como detalhes de implementação, para garantir que seu protótipo atenda aos requisitos. [ACESSAR LABORATÓRIO](https://www.cloudskillsboost.google/focuses/3460?locale=en&parent=catalog)
+> SERVIÇOS DO GOOGLE CLOUD USADOS NESSE LABORATÓRIO
+> * Cloud Storage;
+> * Dataflow;
+> * BigQuery.
+
+
+
+<br>
+
 ## :small_blue_diamond: Dataflow Academy (Python) - Lab 2 - Branching Pipelines and Custom Dataflow Flex Templates
 * Neste laboratório, você irá:
 1. Implementar um pipeline que tenha ramificações;
