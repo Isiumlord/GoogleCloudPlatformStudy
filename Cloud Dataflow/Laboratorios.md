@@ -35,7 +35,12 @@
 > * Dataflow;
 > * BigQuery.
 
+<br>
 
+## :small_blue_diamond: Serverless Data Processing with Dataflow - Writing an ETL pipeline using Apache Beam and Cloud Dataflow (Python)
+* Neste laboratório, você irá criar um pipeline ETL (Extract-Transform-Load) em lote no Apache Beam, que pega dados brutos do Google Cloud Storage e os grava no Google BigQuery. Executando o pipeline do Apache Beam no Cloud Dataflow, e parametrizando a execução do pipeline.
+
+:warning: PARA ACESSAR ESTE LABORATÓRIO é necessário procurar pelo seu nome direto no [Catalog](https://partner.cloudskillsboost.google/catalog).
 
 <br>
 
