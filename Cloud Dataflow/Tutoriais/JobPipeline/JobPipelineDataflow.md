@@ -1,5 +1,6 @@
 # Job Pipeline Dataflow
 Executando JobPipeline-v0.py no ambiente Cloud via Dataflow.
+
 <br>
 
 ## PASSO 1 - Criar Bucket
@@ -9,6 +10,8 @@ Dados da bucket:
 ```bash
 gsutil mb -p data-labs-358422 -c standard -l us-central1 -b on gs://isidoro_bucket3
 ```
+> * *Testando com upload do arquivo JobPipeline-v0.py direto do GitHub*
+> * *Testando com upload do dataset futebol.csv direto na Bucket*
 <br>
 
 ## PASSO 2 - Ativar e Configurar Ambiente
