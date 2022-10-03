@@ -1,4 +1,4 @@
-# Job Pipeline Dataflow
+# Job Pipeline Dataflow - Batch
 Executando JobPipeline-v0.py no ambiente Cloud via Dataflow.
 
 <br>
@@ -8,7 +8,7 @@ Dados da bucket:
 * Região: us-central1
 * Tipo de Bucket: standard
 ```bash
-gsutil mb -p data-labs-358422 -c standard -l us-central1 -b on gs://isidoro_bucket3
+gsutil mb -p data-labs-358422 -c standard -l us-central1 -b on gs://isidoro_flowdata
 ```
 > * *Testando com upload do arquivo JobPipeline-v0.py direto do GitHub*
 > * *Testando com upload do dataset futebol.csv direto na Bucket*
