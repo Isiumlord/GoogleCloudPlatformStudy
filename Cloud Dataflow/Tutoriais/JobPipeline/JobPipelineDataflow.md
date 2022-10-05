@@ -1,6 +1,10 @@
 # Job Pipeline Dataflow - Batch
 Executando JobPipeline-v0.py no ambiente Cloud via Dataflow.
 
+* Gerar Tamplate usando o código desenvolvido;
+* Usar Template no Dataflow;
+* Rodar a Pipeline.
+
 <br>
 
 ## PASSO 1 - Criar Bucket
@@ -14,35 +18,12 @@ gsutil mb -p data-labs-358422 -c standard -l us-central1 -b on gs://isidoro_flow
 > * *Testando com upload do dataset futebol.csv direto na Bucket*
 <br>
 
-## PASSO 2 - Ativar e Configurar Ambiente
-* Instale o SDK do Cloud Dataflow com a versão Python 3.7
-> No Cloud Shell digite o comando:
-```bash
-docker run -it -e DEVSHELL_PROJECT_ID=$DEVSHELL_PROJECT_ID python:3.7 /bin/bash
-```
-<br>
+## PASSO 2 - Criar Conta de Serviço Google
+* IAM > Contas de Serviço > Criar Conta de Serviço > Dar Permissão `Dataflow Worker`
 
+## PASSO 3 - Ativar e Configurar Ambiente
 * Instale a versão mais rescente do Apache Beam
 > No Cloud Shell digite o comando:
 ```bash
 pip install 'apache-beam[gcp]'
 ```
-<br>
-
-## PASSO 3 - Execute a Pipeline
-* Defina uma Variável de Ambiente Bucket para a Bucket que você criou.
-> No Cloud Shell digite o comando:
-```bash
-BUCKET=gs://NOME_DA_SUA_BUCKET
-```
-<br>
-
-* Execute o JobPipeline-v0.py
-> No Cloud Shell digite o comando:
-```bash
-python -m apache_beam.JobPipeline-v0 --project $DEVSHELL_PROJECT_ID \
-  --runner DataflowRunner \
-  --staging_location $BUCKET/staging \
-  --temp_location $BUCKET/temp \
-  --output $BUCKET/results/output \
-  ```
